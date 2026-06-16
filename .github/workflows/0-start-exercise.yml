@@ -35,8 +35,8 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Pull latest changes
-        run: git pull origin main
+      - name: Pull latest changes with rebase
+        run: git pull --rebase origin main
 
       - name: Replace exercise name
         env:
